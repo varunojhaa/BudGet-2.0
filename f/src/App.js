@@ -84,7 +84,7 @@ function App() {
   if (!loggedIn) {
     return (
       <LoginPageStyled bg={bg} className="LoginPage">
-        <h1>Login Page</h1>
+        <h1>Login</h1>
         <form onSubmit={handleLogin}>
           <label>
             Username:
