@@ -4,11 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
-  },
+    "start": "concurrently \"npm run server\" \"cd ../f && npm start\"",
+    "server": "nodemon app.js"
+},
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^8.0.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
